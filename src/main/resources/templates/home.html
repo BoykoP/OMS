@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/commons::head"></head >
+<body>
+<header th:replace="fragments/commons::nav"></header>
+<div class="container" th:object="${user_principal}">
+    <h5 class="text-center text-black mt-5">Welcome Home</h5>
+    <p>Test without condition</p>
+    <p th:text="${user_principal.name}">>Username test</p>
+
+</div>
+</body>
